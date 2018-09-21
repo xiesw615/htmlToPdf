@@ -1,0 +1,151 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*
+
+.carousel-fade .carousel-inner .carousel-item {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	transition-property: opacity;
+}
+.carousel-fade .carousel-inner .carousel-item,
+.carousel-fade .carousel-inner .active.carousel-item-left,
+.carousel-fade .carousel-inner .active.carousel-item-right {
+	opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-vertical .carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-vertical .carousel-inner .carousel-item-prev.carousel-item-right {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.carousel-vertical .carousel-inner .active.carousel-item-left,
+.carousel-vertical .carousel-inner .carousel-item-prev {
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.carousel-vertical .carousel-inner .active.carousel-item-right,
+.carousel-vertical .carousel-inner .carousel-item-next {
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+*/
+
+html { font-size: 20px;}
+
+@font-face {  
+ font-family:'华康海报体';
+ src: url("../font/DFPHaiBaoW12-GB.ttf") /* EOT file for IE */  
+}
+
+.text-gold{ color: #663300;}
+p{ font-size: 0.85rem;}
+.w-90{ width: 85%;}
+.line-sm{line-height: 1.3;}
+/**切换***/
+#myCarousel .carousel-caption{position: absolute;	top: 0;	right: 0;bottom: 0;left: 0;	padding: 0;	z-index: 10;text-align: center;}
+.carousel-control-prev, .carousel-control-next{position: absolute; top: auto; bottom: 0.7rem; opacity: 1; width: 20%;}
+.carousel-control-prev{left: 2rem;}
+.carousel-control-next{right: 2rem;}
+.control-next, .control-prev{ width: 100%; padding: 0.4rem 0; color: #fff; font-size: 0.75rem; border-radius: 2rem; background: rgba(249, 186, 0, 0.8);}
+
+
+/**首页***/
+.one{ padding-top: 2.8rem; height: 100%;}
+.logo{ width:13rem;}
+.index-user{ position: relative; width: 6.5rem; color: #663300;}
+.index-user:before{ content: ""; position: absolute;top: -2.2rem; right: -0.8rem; width:4.9rem; height: 3.6rem; background: url(../img/index-crown.png); background-size: 100% 100%;}
+.index-user:after{content: ""; position: absolute;top:-5.5rem; right: -6rem; width:18rem; height: 18rem; background:url(../img/index-light.png); background-size: 100% 100%; z-index: -10;}
+.index-user img{ border: 0.2rem solid rgba(255, 255, 255, 0.75); }
+.name-title{ font-family: "华康海报体";}
+.footer{ position: absolute; left: 0; right: 0; bottom: 2.8rem; font-size: 0.85rem;}
+
+/**老师寄语***/
+.title{ font-size: 1.2rem; width: 14.6rem; height: 2.6rem; font-family: "华康海报体"; line-height: 2rem; background: url(../img/title-bg.png);background-size: 100% 100%;}
+.bg-orange-2{ background: #ffe7ba;}
+.bg-blue-2{ background: #66a3fe;}
+.user img{border: 0.12rem solid rgba(255, 255, 255, 0.75);}
+.textbody{position: relative; border-radius: 4rem; border: 0.2rem solid rgba(255, 255, 255, 0.75);}
+.textbody:before{ content: ""; position: absolute;top: -0.6rem; left:50%; margin-left: -4.6rem; width:9.3rem; height: 1.27rem; background: url(../img/tape.png); background-size: 100% 100%;z-index:10;}
+.textbody:after{content: ""; position: absolute;bottom:-0.6rem; left:50%; margin-left: -4.6rem; width:9.3rem; height: 1.27rem; background:url(../img/tape.png); background-size: 100% 100%; z-index:10;}
+.textbox{position: relative; text-indent: 1.8rem;}
+.textbox:before{ content: "“"; position: absolute;top: -1rem; left:-3.5rem; font-size:3rem; font-family: "黑体"; }
+.textbox:after{content: "”"; position: absolute;bottom:-2.8rem; right:-1.5rem; font-size:3rem; font-family: "黑体";}
+
+/***班级照片***/
+.classbody{ width: 17.65rem; height: 15.5rem; padding: 5.4rem 0.65rem 0; background: url(../img/class-bg.png);background-size: 100% 100%;}
+.classbody img{ border-radius: 0.3rem;}
+
+/***体质特征***/
+.features{ position:relative; width: 5.2rem; height: 11.8rem;}
+.features-text{ position: absolute; left: 5.6rem; width: 5rem; display: inline-block; top: 4rem; color: #5cc2fc; }
+.features img{ width: 5.2rem; height: 11.8rem;}
+.record{background: #ffe7ba; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 1rem; border: 0.2rem solid rgba(255, 255, 255, 0.75);}
+.record-title{ position: relative; font-size: 0.85rem; padding:0.1rem 0 0.2rem; width: 45%; left: 0.3rem;top: -1rem; background: #f5a16f;border-radius: 1rem; border: 0.2rem solid rgba(255, 255, 255, 0.75);}
+.record-icon img{ width: 0.85rem; margin-top: -0.2rem;}
+.record .table{ font-size: 0.85rem; margin-top: -0.5rem;color: #996600;}
+.record .table th, .table td{ border-color: #ebce93;}
+.record .table th{ border-top: none;color: #663300; font-weight: normal;  }
+
+
+/***我是运动小健将***/
+.five-img{width: 9.25rem; height: 6.3rem; margin-top: 4rem;}
+.title-two{ font-family: "华康海报体"; color: #ffd464; font-size:1.5rem; text-shadow: 2px 2px 0px #753c04;}
+.title-describe{ color:#753c04;}
+
+.photoitem{ position: relative; background: #fcf3d1; border: 0.1rem solid #753c04; border-radius: 1rem; padding: 0.2rem;}
+.photoitem:before{content: ""; width: 0.65rem; height: 1.4rem; position: absolute; top: -0.6rem; left: 1rem; background: url(../img/photo-top.png) center no-repeat; background-size: 100% 100%; z-index: 10}
+.photoitem:after{ content: ""; width: 0.65rem; height: 1.4rem; position: absolute; top: -0.6rem; left: 1rem; background: url(../img/photo-bottom.png) center no-repeat; background-size: 100% 100%; z-index: -5;}
+
+.photoitem img{border-radius: 1rem;  border: 0.07rem dotted #753c04;}
+.photoitem-title{ font-size: 0.65rem; color: #753c04;}
+
+.badges .badge{ font-weight: normal;}
+.badge-magenta{ background: #ffa8d1; color: #333;padding-right: 0.85em;padding-left: 0.85em;}
+.bg-success{ background: #96c775 !important;}
+.book{ font-size: 0.75rem; border-radius: 5rem; text-indent: 1.5rem;}
+
+/***家庭任务***/
+.praise{color: #753c04;}
+.praiseimg{ width: 7rem; height: 6rem;}
+
+

@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.suncd'
+version = '0.0.1-SNAPSHOT'
+
+description = """demo-freemarker"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version:'1.5.10.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.10.RELEASE'
+    compile group: 'org.xhtmlrenderer', name: 'flying-saucer-pdf', version:'9.1.15'
+}

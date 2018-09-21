@@ -1,2 +1,2 @@
-# htmlToPdf
-导出PDF的DEMO例子
+# demo-pdf
+SpringBoot + FreeMarker + FlyingSaucer 实现pdf在线预览下载
